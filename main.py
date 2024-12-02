@@ -1,9 +1,11 @@
 my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
-agent = 0
-while agent < len(my_list) :
-    print(my_list[agent])
-    agent += 1
-    if my_list[agent] <= - 1:
+index = 0
+while index < len(my_list):
+    if my_list[index] < 0:
         break
 
+    if my_list[index] > 0:
+        print(my_list[index])
+
+    index += 1
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
